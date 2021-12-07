@@ -27,7 +27,7 @@ namespace ASP_NET_Core_environment_variables
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                await context.Response.WriteAsync("Enviroment: " + env.EnvironmentName );
             });
         }
     }
